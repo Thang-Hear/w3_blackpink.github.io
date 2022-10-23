@@ -114,7 +114,7 @@ html {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 #nav {
@@ -211,6 +211,60 @@ html {
     margin-top: 46px;
     padding-top: 50%;
     background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
+}
+
+@keyframes spinLogo {
+    0% {
+        transform: rotate(0deg);
+    }
+    12.5% {
+        transform: rotate(45deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    37.5% {
+        transform: rotate(135deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    62.5% {
+        transform: rotate(225deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    87.5% {
+        transform: rotate(315deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+    }
+    
+#slider .logo-spin {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    width: 62px;
+    height: 62px;
+    background-image: url('/assets/img/jennie.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: spinLogo linear 6s infinite;
+    border-radius: 100px;
+    border: 2px solid #000;
+    z-index: 1;
+}
+
+#icon {
+    cursor: pointer;
+}
+
+#my-song {
+    display: none;
 }
 
 #slider .text-content {

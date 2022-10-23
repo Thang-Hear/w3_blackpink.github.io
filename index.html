@@ -46,6 +46,26 @@
         </div>
 
         <div id="slider">
+            <div class="logo-spin" id="icon"></div>
+            <audio controls=""  loop="" id="my-song">
+                <source src="./assets/music/rap_sd.mp3" type="audio/mp4" autoplay="">
+
+                <!-- Js để bật tắt nhạc của cái spinner -->
+                <script>
+                    var mysong = document.getElementById("my-song");
+                    var icon = document.getElementById("icon");
+
+                    icon.onclick = function() {
+                        if (mysong.paused) {
+                            mysong.play();
+                            icon.scr = "media/pause.png";
+                        } else {
+                            mysong.pause();
+                            icon.scr = "media/play.png";
+                        }
+                    }
+                </script>
+            </audio>
             <div class="text-content">
                 <h2 class="text-heading">Pink Venom</h2>
                 <div class="text-description">Pre-release single.</div>
