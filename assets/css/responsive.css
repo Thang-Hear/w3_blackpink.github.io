@@ -116,4 +116,11 @@
     .contact-form {
         margin-top: 32px;
     }
+
+    #slider .logo-spin {
+        width: 52px;
+        height: 52px;
+        right: 6px;
+        top: 4px;
+    }
 }
